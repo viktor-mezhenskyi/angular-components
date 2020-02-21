@@ -1,0 +1,6 @@
+
+ <form #form="ngForm">
+  <counter-input name="counter" [ngModel]='{value:2,test:"good"}' (change)="onChange($event)"></counter-input>
+</form>
+
+<pre>{{ form.value | json }}</pre>
